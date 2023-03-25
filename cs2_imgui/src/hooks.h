@@ -4,15 +4,6 @@
 
 #include "tools/hook.h"
 
-using present_t = HRESULT(WINAPI *)(IDXGISwapChain *, UINT, UINT);
-
-
-struct handle_data
-{
-	DWORD64 process_id;
-	HWND	window_handle;
-};
-
 class hooks
 {
 protected:
